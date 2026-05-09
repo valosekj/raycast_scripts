@@ -16,6 +16,7 @@
 | `delete-last-download.swift` | Deletes the most recently downloaded file after a confirmation dialog. |
 | `duplicate-tab.applescript` | Opens the current browser tab's URL in a new tab (Safari or Chrome). |
 | `move-last-pdf-to-mendeley.swift` | Moves the most recently downloaded PDF to the Mendeley Desktop Downloaded folder. |
+| `paste-as-plaintext.applescript` | Strips formatting from the clipboard and pastes as plain text. |
 | `open-finder-folder-in-iterm.sh` | Opens the frontmost Finder window's directory in a new iTerm2 window. |
 | `open-last-download.swift` | Opens the most recently downloaded file with its default application. |
 | `open-textedit.applescript` | Opens a new TextEdit document pre-filled with the clipboard content. |
