@@ -20,6 +20,7 @@
 | `open-finder-folder-in-iterm.sh` | Opens the frontmost Finder window's directory in a new iTerm2 window. |
 | `open-last-download.swift` | Opens the most recently downloaded file with its default application. |
 | `open-textedit.applescript` | Opens a new TextEdit document pre-filled with the clipboard content. |
+| `search-scholar.sh` | Copies the current text selection and searches for it on Google Scholar. |
 | `safari-clipboard-url.applescript` | Opens a clipboard URL (or Google-searches clipboard text) in a new Safari tab. |
 | `toggle-circle-cursor.sh` | Toggles a circle drawn around the cursor, useful for screen recordings and presentations. |
 | `url-to-doi.sh` | Extracts a DOI from a clipboard URL (scrapes metadata or parses the URL) and copies it. |
