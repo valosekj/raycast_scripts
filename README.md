@@ -15,6 +15,7 @@
 | `create-link-txt.applescript` | Creates `link.txt` in the current Finder folder, writing the clipboard URL into it. |
 | `delete-last-download.swift` | Deletes the most recently downloaded file after a confirmation dialog. |
 | `duplicate-tab.applescript` | Opens the current browser tab's URL in a new tab (Safari or Chrome). |
+| `move-last-download-to-finder.sh` | Moves the most recently downloaded file to the folder open in the frontmost Finder window. |
 | `move-last-pdf-to-mendeley.swift` | Moves the most recently downloaded PDF to the Mendeley Desktop Downloaded folder. |
 | `paste-as-plaintext.applescript` | Strips formatting from the clipboard and pastes as plain text. |
 | `open-finder-folder-in-iterm.sh` | Opens the frontmost Finder window's directory in a new iTerm2 window. |
