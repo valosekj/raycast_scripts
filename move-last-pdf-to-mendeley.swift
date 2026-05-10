@@ -27,7 +27,8 @@ func failure(_ message: String) -> Never {
 
 do {
   let downloadsDirectory = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!
-  let mendeleyDirectory = URL(fileURLWithPath: "/Users/valosek/Library/Application Support/Mendeley Desktop/Downloaded")
+  let mendeleyDirectory = FileManager.default.homeDirectoryForCurrentUser
+    .appendingPathComponent("Library/Application Support/Mendeley Desktop/Downloaded")
 
   let downloads = try FileManager.default.contentsOfDirectory(at: downloadsDirectory, includingPropertiesForKeys: [.addedToDirectoryDateKey], options: .skipsHiddenFiles)
 
