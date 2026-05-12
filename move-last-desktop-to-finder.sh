@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Move Last Download to Finder Folder
+# @raycast.title Move Last Desktop File to Finder Folder
 # @raycast.mode silent
 # @raycast.packageName Finder
 #
@@ -10,15 +10,15 @@
 # @raycast.icon 📥
 #
 # Documentation:
-# @raycast.description Moves the most recently downloaded file to the folder open in the frontmost Finder window.
+# @raycast.description Moves the most recently added Desktop file to the folder open in the frontmost Finder window.
 
-downloads_dir="$HOME/Downloads"
+desktop_dir="$HOME/Desktop"
 
-# Get the most recently added file in Downloads (files only, no hidden files, no subdirectories)
-src=$(find "$downloads_dir" -maxdepth 1 -type f ! -name '.*' -exec stat -f '%m %N' {} \; | sort -rn | head -1 | cut -d' ' -f2-)
+# Get the most recently added file on Desktop (files only, no hidden files, no subdirectories)
+src=$(find "$desktop_dir" -maxdepth 1 -type f ! -name '.*' -exec stat -f '%m %N' {} \; | sort -rn | head -1 | cut -d' ' -f2-)
 
 if [ -z "$src" ]; then
-  echo "No files in Downloads"
+  echo "No files on Desktop"
   exit 1
 fi
 
