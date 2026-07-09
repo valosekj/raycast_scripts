@@ -14,6 +14,7 @@
 | `copy-last-desktop-to-clipboard.swift` | Copies the most recently added Desktop file to the clipboard (equivalent to Cmd+C in Finder). |
 | `copy-last-download-path.swift` | Copies the absolute path of the most recently downloaded file to the clipboard. |
 | `copy-last-download-to-clipboard.swift` | Copies the most recently downloaded file to the clipboard (equivalent to Cmd+C in Finder). |
+| `create-info-txt.applescript` | Creates an empty `info.txt` file in the current Finder folder. |
 | `create-link-txt.applescript` | Creates `link.txt` in the current Finder folder, writing the clipboard URL into it. |
 | `delete-last-download.swift` | Deletes the most recently downloaded file after a confirmation dialog. |
 | `duplicate-tab.applescript` | Opens the current browser tab's URL in a new tab (Safari or Chrome). |
