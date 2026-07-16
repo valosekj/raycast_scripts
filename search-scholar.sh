@@ -8,21 +8,25 @@
 #
 # Optional parameters:
 # @raycast.icon 🎓
+# @raycast.argument1 { "type": "text", "placeholder": "Name (default: selection/clipboard)", "optional": true }
 #
 # Documentation:
-# @raycast.description Copies the current text selection and searches for it on Google Scholar.
+# @raycast.description Searches Google Scholar for the given name. Without an argument, copies the current text selection and searches for that (falling back to the clipboard contents).
 
-# Copy current selection to clipboard
-osascript -e 'tell application "System Events" to keystroke "c" using command down'
-sleep 0.2
+query="$1"
 
-selected=$(pbpaste)
+if [ -z "$query" ]; then
+  # Copy current selection to clipboard, then fall back to whatever is on it
+  osascript -e 'tell application "System Events" to keystroke "c" using command down'
+  sleep 0.2
+  query=$(pbpaste)
+fi
 
-if [ -z "$selected" ]; then
-  echo "No text selected"
+if [ -z "$query" ]; then
+  echo "No name given, and nothing selected or on the clipboard"
   exit 1
 fi
 
-encoded=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$selected")
+encoded=$(python3 -c "import urllib.parse, sys; print(urllib.parse.quote(sys.argv[1]))" "$query")
 open "https://scholar.google.com/scholar?q=${encoded}"
-echo "Searching Scholar: $selected"
+echo "Searching Scholar: $query"

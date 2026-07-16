@@ -28,7 +28,7 @@
 | `open-last-desktop.swift` | Opens the most recently added file on the Desktop with its default application. |
 | `open-last-download.swift` | Opens the most recently downloaded file with its default application. |
 | `open-textedit.applescript` | Opens a new TextEdit document pre-filled with the clipboard content. |
-| `search-scholar.sh` | Copies the current text selection and searches for it on Google Scholar. |
+| `search-scholar.sh` | Searches Google Scholar for a given name, or for the current text selection / clipboard if no argument is passed. |
 | `safari-clipboard-url.applescript` | Opens a clipboard URL (or Google-searches clipboard text) in a new Safari tab. |
 | `toggle-circle-cursor.sh` | Toggles a circle drawn around the cursor, useful for screen recordings and presentations. |
 | `url-to-doi.sh` | Extracts a DOI from a clipboard URL (scrapes metadata or parses the URL) and copies it. |
