@@ -9,6 +9,7 @@
 | `capture-fullscreen-to-desktop.sh` | Captures the screen containing the cursor (with cursor visible) and saves it to Desktop. |
 | `capture-selection-to-clipboard.sh` | Screenshots a user-selected area and copies it to the clipboard. |
 | `capture-window-to-desktop.sh` | Screenshots a user-selected window and saves it to Desktop. |
+| `chrome-clipboard-url.applescript` | Opens a clipboard URL (or Google-searches clipboard text) in a new Chrome tab. |
 | `copy-current-url.applescript` | Copies the URL of the active tab in Safari or Chrome. |
 | `copy-last-desktop-path.swift` | Copies the absolute path of the most recently added Desktop file to the clipboard. |
 | `copy-last-desktop-to-clipboard.swift` | Copies the most recently added Desktop file to the clipboard (equivalent to Cmd+C in Finder). |
@@ -29,6 +30,5 @@
 | `open-last-download.swift` | Opens the most recently downloaded file with its default application. |
 | `open-textedit.applescript` | Opens a new TextEdit document pre-filled with the clipboard content. |
 | `search-scholar.sh` | Searches Google Scholar for a given name, or for the current text selection / clipboard if no argument is passed. |
-| `safari-clipboard-url.applescript` | Opens a clipboard URL (or Google-searches clipboard text) in a new Safari tab. |
 | `toggle-circle-cursor.sh` | Toggles a circle drawn around the cursor, useful for screen recordings and presentations. |
 | `url-to-doi.sh` | Extracts a DOI from a clipboard URL (scrapes metadata or parses the URL) and copies it. |
