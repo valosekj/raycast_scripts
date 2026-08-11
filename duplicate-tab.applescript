@@ -6,28 +6,18 @@
 # @raycast.icon 🔁
 
 on run
-  set frontApp to name of (info for (path to frontmost application))
+  tell application "Google Chrome"
+    if (count of windows) is 0 then
+      return "No Chrome window is open"
+    end if
 
-  if frontApp contains "Safari" then
-    tell application "Safari"
-      set currentURL to URL of current tab of front window
-      tell front window
-        set newTab to make new tab with properties {URL:currentURL}
-        set current tab to newTab
-      end tell
+    set currentURL to URL of active tab of front window
+    tell front window
+      make new tab with properties {URL:currentURL}
+      # Chrome does not focus a newly made tab -- select it explicitly
+      set active tab index to (count of tabs)
     end tell
-    return "Duplicated tab in Safari"
+  end tell
 
-  else if frontApp contains "Chrome" then
-    tell application "Google Chrome"
-      set currentURL to URL of active tab of front window
-      tell front window
-        make new tab with properties {URL:currentURL}
-      end tell
-    end tell
-    return "Duplicated tab in Chrome"
-
-  else
-    return "No supported browser is frontmost (Safari or Chrome)"
-  end if
+  return "Duplicated tab in Chrome"
 end run

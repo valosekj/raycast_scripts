@@ -6,21 +6,12 @@
 # @raycast.icon 🔗
 
 on run
-  set frontApp to name of (info for (path to frontmost application))
-
-  if frontApp contains "Safari" then
-    tell application "Safari"
-      set currentURL to URL of current tab of front window
-    end tell
-
-  else if frontApp contains "Chrome" then
-    tell application "Google Chrome"
-      set currentURL to URL of active tab of front window
-    end tell
-
-  else
-    return "No supported browser is frontmost (Safari or Chrome)"
-  end if
+  tell application "Google Chrome"
+    if (count of windows) is 0 then
+      return "No Chrome window is open"
+    end if
+    set currentURL to URL of active tab of front window
+  end tell
 
   set the clipboard to currentURL
   return "Copied: " & currentURL
