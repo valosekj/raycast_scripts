@@ -24,6 +24,7 @@
 | `move-last-desktop-to-finder.sh` | Moves the most recently added Desktop file to the folder open in the frontmost Finder window. |
 | `move-last-download-to-finder.sh` | Moves the most recently downloaded file to the folder open in the frontmost Finder window. |
 | `move-last-pdf-to-mendeley.swift` | Moves the most recently downloaded PDF to the Mendeley Desktop Downloaded folder. |
+| `new-document-in-finder.sh` | Creates a blank Word/Excel/PowerPoint/Markdown/Text document (optionally named) in the current Finder folder, using templates from `assets/templates/`. |
 | `paste-as-plaintext.applescript` | Strips formatting from the clipboard and pastes as plain text. |
 | `open-finder-folder-in-iterm.sh` | Opens the frontmost Finder window's directory in a new iTerm2 window. |
 | `open-last-desktop.swift` | Opens the most recently added file on the Desktop with its default application. |
