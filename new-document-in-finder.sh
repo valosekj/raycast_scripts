@@ -12,7 +12,7 @@
 # @raycast.argument2 { "type": "text", "placeholder": "Name (default: Untitled)", "optional": true }
 #
 # Documentation:
-# @raycast.description Creates a new blank document (Word, Excel, PowerPoint, Markdown, Text) in the current Finder folder and selects it.
+# @raycast.description Creates a new blank document (Word, Excel, PowerPoint, Markdown, Text) in the current Finder folder and opens it.
 
 ext="$1"
 name="${2:-Untitled}"
@@ -62,11 +62,7 @@ case "$ext" in
     ;;
 esac
 
-# Select the new file in Finder
-osascript - "$dst" >/dev/null <<'OSA'
-on run argv
-  tell application "Finder" to select (POSIX file (item 1 of argv) as alias)
-end run
-OSA
+# Open the new file in its default app
+open "$dst"
 
 echo "Created: $(basename "$dst")"

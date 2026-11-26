@@ -15,7 +15,7 @@
 | `copy-last-desktop-to-clipboard.swift` | Copies the most recently added Desktop file to the clipboard (equivalent to Cmd+C in Finder). |
 | `copy-last-download-path.swift` | Copies the absolute path of the most recently downloaded file to the clipboard. |
 | `copy-last-download-to-clipboard.swift` | Copies the most recently downloaded file to the clipboard (equivalent to Cmd+C in Finder). |
-| `create-info-txt.applescript` | Creates an empty `info.txt` file in the current Finder folder. |
+| `create-info-txt.applescript` | Creates an empty `info.txt` file in the current Finder folder and opens it. |
 | `create-link-txt.applescript` | Creates `link.txt` in the current Finder folder, writing the clipboard URL into it. |
 | `delete-last-download.swift` | Deletes the most recently downloaded file after a confirmation dialog. |
 | `duplicate-tab.applescript` | Opens the current Chrome tab's URL in a new tab. |
@@ -24,7 +24,7 @@
 | `move-last-desktop-to-finder.sh` | Moves the most recently added Desktop file to the folder open in the frontmost Finder window. |
 | `move-last-download-to-finder.sh` | Moves the most recently downloaded file to the folder open in the frontmost Finder window. |
 | `move-last-pdf-to-mendeley.swift` | Moves the most recently downloaded PDF to the Mendeley Desktop Downloaded folder. |
-| `new-document-in-finder.sh` | Creates a blank Word/Excel/PowerPoint/Markdown/Text document (optionally named) in the current Finder folder, using templates from `assets/templates/`. |
+| `new-document-in-finder.sh` | Creates a blank Word/Excel/PowerPoint/Markdown/Text document (optionally named) in the current Finder folder and opens it, using templates from `assets/templates/`. |
 | `paste-as-plaintext.applescript` | Strips formatting from the clipboard and pastes as plain text. |
 | `paste-replace-newlines-with-spaces.sh` | Joins the selected text, or the clipboard when nothing is selected, into a single line (newlines → spaces, hyphenated line breaks rejoined) and pastes it. |
 | `paste-replace-spaces-with-underscores.sh` | Replaces spaces with underscores in the selected text, or pastes the clipboard with spaces replaced by underscores (e.g. when naming a file in Finder). |

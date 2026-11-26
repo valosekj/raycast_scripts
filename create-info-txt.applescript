@@ -20,5 +20,8 @@ on run
   # Create an empty info.txt (do not overwrite if it already exists)
   do shell script "touch " & quoted form of filePath
 
+  # Open it in the default app for .txt files
+  do shell script "open " & quoted form of filePath
+
   return "Created: " & filePath
 end run
